@@ -58,7 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Widget _buildListItem(BuildContext context, DocumentSnapshot data) {
-    final record = Record.fromMap(data as Map<String, dynamic>);
+    final record = Record.fromSnapshot(data);
 
     return Padding(
       key: ValueKey(record.name),
